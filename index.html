@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utilities.css">
+  <script src="https://kit.fontawesome.com/b86093d5a0.js" crossorigin="anonymous"></script>
+  <title>Hidir Angullia</title>
+</head>
+
+<body>
+  
+  <header>
+    <div class="navbar" id="navbar">
+      <nav>
+        <ol>
+          <li><a href="#about">About</a></li>
+          <li><a href="#abilities">Abilities</a></li>
+          <li><a href="#projects">Inspired Projects</a></li>
+          <li><a href="#contactme">Talk to me</a></li>
+        </ol>
+      </nav>
+    </div>
+
+    <span class="open-slide" id="open-slide">
+      <a class="btn-open">
+        <!-- <i class="fas fa-angle-double-left"></i> -->
+        <i class="fas fa-align-right"></i>
+      </a>
+    </span>
+
+    <div class="side-navbar" id="side-navbar">
+      <a class="btn-close">
+        <i class="far fa-times-circle"></i>
+      </a>
+      <ol>
+        <li><a href="#about"><span>I. </span>About</a></li>
+        <li><a href="#abilities"><span>II. </span>Abilities</a></li>
+        <li><a href="#projects"><span>III. </span>Inspired Projects</a></li>
+        <li><a href="#contactme"><span>IV. </span>Talk to me</a></li>
+      </ol>
+    </div>
+  </header>
+
+  <section id="intro" class="section">
+    <div class="hero">
+      <div class="content">
+        <h2>Hola,</h2>
+        <h1>I'm Hidir Angullia.</h1>
+        <h3>Programmer & Web Developer based in Australia. I make web applications and anything which requires a user interface (yes stunning websites too).</h3>
+        <a href="mailto:hidirj@gmail.com" id="contactmenow" class="btn">Hit me up</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="aboutme">
+      <h3 class="section-title"><span>I. </span>ABOUT ME</h3>
+      <div class="flex-row">
+        <div class="flex-row-column">
+          <p class="lead">
+            Simplicity & Efficiency is how I like to frame my thoughts. The bigger the challenge, the more I revel in it. That's also why I built this website without using any framework, just plain <span>HTML, CSS and Javascript</span>.
+          </p><br>
+  
+          <p>
+            I've worked in a range of projects in the IT industry, ranging from the easy ones to downright tortuous. Contact me through my channels down below if there is something that you want me to do for you. If you've read this far and decided that, "Wow, how do I get this amazingly inspired man to join my team right now to show my developers how it's done".. Call me or drop me a text message and I'll be happy to listen to offers. &#40;No, I do not want tech support and my computer has not been compromised&#41;.
+          </p>
+        </div>
+        <div class="flex-row-image-column">
+          <img src="./img/Bitey.jpg" class="responsive-image" alt="Nothing important to see just a photo of me">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="abilities" class="section">
+    <div class="abilities-container">
+      <h3 class="section-title"><span>II. </span>MY ABILITIES</h3>
+      <div class="flex-row">
+        <div class="flex-row-column">
+          <div class="bar-container">
+            <h4>HTML: </h4>
+            <div class="progress">
+              <div style="width:90%"></div>
+            </div>
+            <h4>CSS: </h4>
+            <div class="progress">
+              <div style="width:85%"></div>
+            </div>
+            <h4>Javascript: </h4>
+            <div class="progress">
+              <div style="width:80%"></div>
+            </div>
+            <h4>Python: </h4>
+            <div class="progress">
+              <div style="width:70%"></div>
+            </div>
+            <h4>R: </h4>
+            <div class="progress">
+              <div style="width:70%"></div>
+            </div>
+            <h4>PostgreSQL: </h4>
+            <div class="progress">
+              <div style="width:65%"></div>
+            </div>
+            <h4>Bootstrap: </h4>
+            <div class="progress">
+              <div style="width:70%"></div>
+            </div>
+            <h4>MSSQL Server: </h4>
+            <div class="progress">
+              <div style="width:90%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-row-column">
+          <p>These are some of the frameworks & technologies that I've been using lately:</p></br>
+            <ul class="skills-grid">
+              <li>Bootstrap 5</li>
+              <li>React</li>
+              <li>Gatsby</li>
+              <li>GraphQL</li>
+              <li>TailwindCSS</li>
+              <li>Materialize</li>
+              <li>Bitbucket</li>
+              <li>Github</li>
+              <li>MongoDB</li>
+            </ul>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- <section id="projects" class="section">
+    <div class="projects-container">
+      <h3 class="section-title">PROJECTS & WORK IN PROGRESS</h3>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="./img/floppy.svg" class="card-image" alt="floppy">
+          <header>
+            <div class="project-top">
+
+            </div>
+            <h3 class="project-title">
+              Random Facts
+            </h3>
+            <p>
+              Retrieve useless facts using an external API
+            </p>
+          </header>
+          <footer>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </footer>
+        </div>
+
+        <div class="project-card">
+          <img src="./img/floppy.svg" class="card-image" alt="floppy">
+          <header>
+            <div class="project-top">
+
+            </div>
+            <h3 class="project-title">
+              Bird Whisperer
+            </h3>
+            <p>Plays different bird sounds recorded in the wild. Birds will think you're one of them.</p>
+          </header>
+          <footer>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </footer>
+        </div>
+
+        <div class="project-card">
+          <img src="./img/floppy.svg" class="card-image" alt="floppy">
+          <header>
+            <div class="project-top">
+
+            </div>
+            <h3 class="project-title">
+              Animated Login Form
+            </h3>
+            <p>
+              Create an animated login form template using only CSS transitions and transformations.
+            </p>
+          </header>
+          <footer>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </footer>
+        </div>
+
+        <div class="project-card">
+          <img src="./img/floppy.svg" class="card-image" alt="floppy">
+          <header>
+            <div class="project-top">
+
+            </div>
+            <h3 class="project-title">
+              Project 4
+            </h3>
+            <p>
+
+            </p>
+          </header>
+          <footer>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </footer>
+        </div>
+
+        <div class="project-card">
+          <img src="./img/floppy.svg" class="card-image" alt="floppy">
+          <header>
+            <div class="project-top">
+
+            </div>
+            <h3 class="project-title">
+              Project 5
+            </h3>
+            <p>
+
+            </p>
+          </header>
+          <footer>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </footer>
+        </div>
+
+        <div class="project-card">
+          <img src="./img/floppy.svg" class="card-image" alt="floppy">
+          <header>
+            <div class="project-top">
+
+            </div>
+            <h3 class="project-title">
+              Project 6
+            </h3>
+            <p>
+
+            </p>
+          </header>
+          <footer>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </footer>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>

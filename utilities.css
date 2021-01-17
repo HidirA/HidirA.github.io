@@ -1,0 +1,98 @@
+:root {
+  --background: #1b1d23;
+  --highlight: #73ffdd;
+  --secondary-text: #C5C6C7;
+}
+
+.section {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem;
+}
+
+h3.section-title {
+  display: inline-block;
+  border-top: 2px solid darkviolet;
+  padding-bottom: 2rem;
+}
+
+h3.section-title span {
+  color: var(--highlight);
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid;
+  color: #000;
+  font-weight: 500;
+  border-color: #66FCF1;
+  background-color: var(--highlight);
+  border-color: darkviolet;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: #66FCF1;
+  background-color: darkviolet;
+  border-color: #66FCF1;
+  transition: ease 0.5s;
+}
+
+/* Flex box row and columns */
+
+.flex-row {
+  display: flex;
+}
+
+.flex-row-column {
+  flex: 50%;
+  padding: 1rem 0 0 0;
+}
+
+.flex-row-image-column {
+  flex: 50%;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/* Grids */
+
+/* Responsive images */
+
+.responsive-image {
+  width: 85%;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid var(--highlight);
+  opacity: 0.9;
+  transition: opacity 0.2s, border 0.2s;
+}
+
+.responsive-image:hover {
+  opacity: 1;
+  border: 3px solid #9400D3;
+  animation: shake 0.2s;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+

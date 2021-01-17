@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+  --background: #1b1d23;
+  --highlight: #73ffdd;
+  --secondary-text: #C5C6C7;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* scroll-padding-top: 70px; */
+}
+
+body {
+  font-family: 'Roboto-Mono', monospace;
+  background-color: var(--background);
+  color: #fff;
+  line-height: 1.6;  
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+p.lead {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+p.lead span {
+  color: var(--highlight);
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--highlight);
+  font-size: 0.9rem;
+  background-color: var(--background);
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 50px;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+.navbar nav li {
+  /* color: var(--secondary-text); */
+  margin-left: 1.7rem;
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+
+.navbar nav a {
+  color: var(--secondary-text);
+}
+
+.navbar nav a:hover {
+  color: var(--highlight);
+  transition: ease 0.5s;
+}
+
+.navbar nav ol {
+  display: flex;
+}
+
+.navbar .btn {
+  margin-left: 1.7rem;
+}
+
+/* Side Navbar */
+
+.open-slide {
+  background-color: var(--background);
+  opacity: 0.9;
+  border-radius: 5px;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  right: 1rem;
+  transition: 0.5s;
+  z-index: 11;
+}
+
+.open-slide .btn-open {
+  font-size: 2.5rem;
+  color: var(--highlight);
+}
+
+.side-navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  right: 0;
+  color: var(--highlight);
+  font-size: 0.9rem;
+  background-color: #0B0C10;
+  opacity: 0.9;
+  overflow-x: hidden;
+  transition: 0.2s;
+}
+
+.side-navbar a {
+  padding: 2rem 2rem 0 2rem;
+  color: var(--secondary-text);
+  display: inline-block; 
+  transition: 0.3s;
+}
+
+.side-navbar a:hover {
+  color: var(--highlight);
+}
+
+.side-navbar span {
+  color: var(--highlight);
+}
+
+.side-navbar .btn-close {
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+  font-size: 3rem;
+  color: var(--highlight);
+}
+
+/* Hero */
+
+.hero {
+  height: 100vh;
+  max-width: 1080px;
+  position: relative;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+}
+
+.hero .content h1 {
+  color: var(--highlight);
+  font-size: 2rem;
+}
+
+.hero .content h3 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin: 1.5rem 0 2rem;
+}
+
+/* About me section */
+
+.aboutme {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  width: 100%;
+  max-width: 1080px;
+  padding: 1.5rem 0;
+}
+
+p.lead span:hover {
+  text-decoration: underline #9400D3;
+}
+
+/* Abilities */
+
+.abilities-container {
+  width: 100%;
+  max-width: 1080px;
+  padding: 1.5rem 0;
+}
+
+.bar-container {
+  padding: 0 2rem 1rem; 
+}
+
+.progress {
+  overflow: hidden;
+  height: 1.5rem;
+  background-color: darkviolet;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.progress div {
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: var(--highlight);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+
+.skills-grid li::marker {
+  color: var(--highlight);
+}
+
+/* Projects */
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .navbar>a {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .hero {
+    max-width: 768px;
+  }
+
+  .aboutme {
+    max-width: 768px;
+  }
+
+  .abilities-container {
+    max-width: 768px;
+  }
+
+  .projects-container {
+    max-width: 768px;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .side-navbar a {
+    display: none;
+  }
+  .open-slide {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    max-width: 1024px;
+  }
+
+  .aboutme {
+    max-width: 1024px;
+  }
+
+  .abilities-container {
+    max-width: 1024px;
+  }
+
+  .projects-container {
+    max-width: 1024px;
+  }
+}
