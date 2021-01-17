@@ -3,7 +3,7 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById('navbar').style.top = '0';
-    document.getElementById('open-slide').style.top = '1.5rem';
+    document.getElementById('open-slide').style.top = '0';
   } else {
     document.getElementById('navbar').style.top = "-70px";
     document.getElementById('open-slide').style.top = "-70px";
@@ -12,7 +12,7 @@ window.onscroll = function() {
 }
 
 function openSlideMenu() {
-  document.getElementById('side-navbar').style.width = "65vw";
+  document.getElementById('side-navbar').style.width = "70vw";
 }
 
 function closeSlideMenu() {
