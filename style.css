@@ -263,8 +263,17 @@ p.lead span:hover {
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--secondary-background);
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 1.5rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.project-card:hover {
+  top: -0.5rem;
+  box-shadow: 0 3px 6px var(--highlight), 0 3px 6px var(--highlight);
 }
 
 .project-top {
@@ -272,6 +281,14 @@ p.lead span:hover {
   align-items: center;
   justify-content: space-between;
   font-size: 2rem;
+  color: var(--highlight);
+}
+
+.project-card a {
+  color: var(--secondary-text);
+}
+
+.project-card a:hover {
   color: var(--highlight);
 }
 

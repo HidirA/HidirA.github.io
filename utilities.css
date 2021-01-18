@@ -31,17 +31,14 @@ h3.section-title span {
   border: 1.5px solid;
   color: #000;
   font-weight: 500;
-  border-color: #66FCF1;
   background-color: var(--highlight);
-  border-color: darkviolet;
   border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
 }
 
 .btn:hover {
-  color: #66FCF1;
-  background-color: darkviolet;
-  border-color: #66FCF1;
   transition: ease 0.5s;
+  box-shadow: 0 3px 6px darkviolet, 0 3px 6px darkviolet;
 }
 
 /* Flex box row and columns */
