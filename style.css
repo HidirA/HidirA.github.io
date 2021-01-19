@@ -7,7 +7,7 @@
   --secondary-text: #C5C6C7;
   --secondary-text-2: #c9ccd6;
   --secondary-background: #24262e;
-  --locked: #FD5F00;
+  --neon-orange: #FD5F00;
 }
 
 * {
@@ -210,9 +210,19 @@ p.lead span {
 }
 
 .experience-container {
-  padding: 0 1rem 0; 
+  background-color: var(--secondary-background);
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
 }
 
+.experience-container:hover {
+  top: -0.5rem;
+  box-shadow: 0 3px 6px var(--neon-orange), 0 3px 6px var(--neon-orange);
+}
 .experience-container i {
   font-size: 2rem;
   color: var(--highlight);
@@ -299,7 +309,7 @@ p.lead span {
 }
 
 .project-card i.locked {
-  color: var(--locked);
+  color: var(--neon-orange);
 }
 
 .project-card h3 {
