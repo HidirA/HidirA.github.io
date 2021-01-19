@@ -38,7 +38,6 @@ p.lead {
 p.lead span {
   color: var(--highlight);
   font-weight: 600;
-  transition: all 0.5s ease;
 }
 
 /* Navbar */
@@ -193,10 +192,6 @@ p.lead span {
   align-items: flex-start;
 }
 
-p.lead span:hover {
-  text-decoration: underline #9400D3;
-}
-
 /* Abilities */
 
 .abilities-container {
@@ -208,14 +203,24 @@ p.lead span:hover {
   align-items: flex-start;
 }
 
-.bar-container {
-  padding: 0 2rem 0; 
+.abilities-container span {
+  color: var(--highlight);
+  font-weight: 600;
 }
 
-.progress {
+.experience-container {
+  padding: 0 1rem 0; 
+}
+
+.experience-container i {
+  font-size: 2rem;
+  color: var(--highlight);
+}
+
+/* .progress {
   overflow: hidden;
   height: 1.5rem;
-  /* background-color: darkviolet; */
+  background-color: darkviolet;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
@@ -225,7 +230,7 @@ p.lead span:hover {
   color: #fff;
   text-align: center;
   background-color: var(--highlight);
-}
+} */
 
 .skills-grid {
   display: grid;
