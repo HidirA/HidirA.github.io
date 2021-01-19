@@ -7,6 +7,7 @@
   --secondary-text: #C5C6C7;
   --secondary-text-2: #c9ccd6;
   --secondary-background: #24262e;
+  --locked: #FD5F00;
 }
 
 * {
@@ -297,6 +298,10 @@ p.lead span {
   color: var(--highlight);
 }
 
+.project-card i.locked {
+  color: var(--locked);
+}
+
 .project-card h3 {
   padding: 2rem 0 1rem;
 }
@@ -322,6 +327,18 @@ p.lead span {
 }
 
 /* Media Queries */
+
+@media (min-width: 601px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 901px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 @media (max-width: 768px) {
   .navbar nav {

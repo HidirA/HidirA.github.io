@@ -2,6 +2,9 @@
   --background: #1b1d23;
   --highlight: #73ffdd;
   --secondary-text: #C5C6C7;
+  --secondary-text-2: #c9ccd6;
+  --secondary-background: #24262e;
+  --locked: #FD5F00;
 }
 
 .section {
@@ -27,18 +30,18 @@ h3.section-title span {
 .btn {
   cursor: pointer;
   display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 1.5px solid;
-  color: #000;
-  font-weight: 500;
-  background-color: var(--highlight);
+  padding: 0.5rem 1.5rem;
+  border: 3px solid var(--highlight);
+  color: #fff;
+  font-weight: 600;
+  background-color: var(--secondary-background);
   border-radius: 5px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
 }
 
 .btn:hover {
   transition: ease 0.5s;
-  box-shadow: 0 3px 6px darkviolet, 0 3px 6px darkviolet;
+  box-shadow: 0 3px 6px var(--highlight), 0 3px 6px var(--highlight);
 }
 
 /* Flex box row and columns */
