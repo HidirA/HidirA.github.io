@@ -4,7 +4,7 @@
   --secondary-text: #C5C6C7;
   --secondary-text-2: #c9ccd6;
   --secondary-background: #24262e;
-  --locked: #FD5F00;
+  --neon-orange: #FD5F00;
 }
 
 .section {
@@ -68,17 +68,22 @@ h3.section-title span {
 .responsive-image {
   width: 80%;
   height: auto;
-  border-radius: 15px;
-  border: 3px solid var(--highlight);
+  border-radius: 6px;
+  /* border: 3px solid var(--secondary-background); */
   opacity: 0.9;
-  transition: opacity 0.2s, border 0.2s;
+  transition: opacity 0.2s;
+  box-shadow: 0 3px 6px var(--highlight), 0 3px 6px var(--highlight);
+  position: relative;
+  top: 0;
+  transition: ease 0.2s;
 }
 
 .responsive-image:hover {
   opacity: 1;
-  border: 3px solid #9400D3;
-  animation: shake 0.2s;
-  /* animation-iteration-count: infinite; */
+  top: -0.5rem;
+  box-shadow: 0 3px 6px var(--neon-orange), 0 3px 6px var(--neon-orange);
+  /* animation: shake 0.2s;
+  animation-iteration-count: infinite; */
 }
 
 @keyframes shake {
