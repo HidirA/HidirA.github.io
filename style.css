@@ -361,7 +361,6 @@ p.lead span {
   padding: 1.5rem;
   width: 100%;
   max-width: calc(var(--contact-card-height) * 1.586);
-  height: var(--contact-card-height);
   box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
   position: relative;
   top: 0;
