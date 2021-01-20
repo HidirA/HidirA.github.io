@@ -100,4 +100,17 @@ h3.section-title span {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+/* Blinking cursor Animation */
 
+.blinking-cursor {
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #ffffff;
+  }
+}
