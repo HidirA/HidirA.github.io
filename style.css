@@ -18,6 +18,10 @@
   /* scroll-padding-top: 70px; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto-Mono', monospace;
   /* font-family: 'Work Sans', sans-serif; */
